@@ -4,6 +4,7 @@ import ParameterError from "../models/errors/parameter.error.model";
 import ForbiddenError from "../models/errors/forbidden.error.model";
 import logger from "../config/logger";
 
+/* istanbul ignore next */
 function errorHandler(error: any, req: Request, res: Response, next: NextFunction) {
   logger.error(error);
   if (error instanceof ParameterError) {
