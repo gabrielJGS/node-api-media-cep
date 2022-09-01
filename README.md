@@ -23,7 +23,7 @@ Implemente testes automatizados.
 
 # Tarefas:
 - Rota Calculo de Media X
-- Rota Consulta de cep
+- Rota Consulta de cep X
 - Log X
 - Docker
 - Testes
