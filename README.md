@@ -20,3 +20,10 @@ Este endereço tem que ser retornado para o chamador, caso o Bairro não seja en
 Use TypeScript.  
 Divida em camadas de responsabilidade única, com classes e métodos coesos. Vá pela simplicidade do código.  
 Implemente testes automatizados.  
+
+# Tarefas:
+- Rota Calculo de Media X
+- Rota Consulta de cep
+- Log X
+- Docker
+- Testes
