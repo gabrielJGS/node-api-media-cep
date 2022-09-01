@@ -8,9 +8,13 @@
 
 ## Utilizando:
 - Realize o clone deste repositório
-- Realize o build do projeto
+- Caso queira rodar localmente:  
+```npm i && npm run dev```  
+- Caso queira rodar os testes:  
+```npm run test```  
+- Caso vá rodar pelo container, realize o build do projeto:  
 ```docker build . -t node-mepoupe-test --no-cache```  
-- Em seguida
+- Em seguida:  
 ```docker run -p 3333:3333 -d node-mepoupe-test```  
 
 # Crie um projeto Node.JS e implemente os seguintes 2 endPoints:
@@ -35,4 +39,4 @@ Implemente testes automatizados.
 - Rota Consulta de cep X
 - Log X
 - Docker X
-- Testes
+- Testes X
