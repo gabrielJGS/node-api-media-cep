@@ -1,8 +1,17 @@
-# API criada para o teste prático da Me Poupe
+## API criada para o teste prático da Me Poupe
 - Typescript
 - Node
 - Express
 - Http-Status-Code
+- Jest
+- Docker
+
+# Utilizando:
+- Realize o clone deste repositório
+- Realize o build do projeto
+```docker build . -t node-mepoupe-test --no-cache```
+- Em seguida
+```docker run -p 3333:3333 -d node-mepoupe-test```
 
 ## Crie um projeto Node.JS e implemente os seguintes 2 endPoints:
 # 1- Cálculo da média
