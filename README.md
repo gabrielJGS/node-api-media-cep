@@ -1,5 +1,4 @@
-# Template base para projetos CRUD node com postgres
-## Criado durante o curso DIO Bootcamp Impulso Javascript Evolution  
+# API criada para o teste prático da Me Poupe
 - Typescript
 - Node
 - Express
