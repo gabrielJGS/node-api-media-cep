@@ -4,7 +4,7 @@
     "target": "es2019",
     "module": "commonjs",
     "moduleResolution": "node",
-    "rootDir": "src",
+    "rootDir": "./",
     "typeRoots": [
       "./src/@types",
       "./node_modules/@types"
@@ -17,5 +17,6 @@
     "skipLibCheck": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-  }
+    "resolveJsonModule": true
+  },
 }
