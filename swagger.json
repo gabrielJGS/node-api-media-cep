@@ -60,7 +60,7 @@
             "description": "Cep encontrado"
           },
           "500": {
-            "description": "Cep não encontrado ou inválido/não informado"
+            "description": "Cep não encontrado ou inválido/não informado/sem bairro"
           }
         }
       }

@@ -12,6 +12,10 @@ class CalculoMediaRepository {
       if (cepData.erro === "true") {
         throw new ParameterError("Cep não encontrado pela api");
       }
+
+      if (cepData.bairro === "") {
+        throw new ParameterError("Cep sem bairro");
+      }
       cep.logradouro = cepData.logradouro;
       cep.complemento = cepData.complemento;
       cep.bairro = cepData.bairro;
