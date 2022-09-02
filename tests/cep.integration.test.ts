@@ -34,5 +34,12 @@ describe("Testa a rota Cep", () => {
 
     expect(response.statusCode).toEqual(500);
   });
+  
+  test("testa o tratamento de erros no caso de cep sem bairro", async () => {
+    const mock_cep = "18150000";
 
+    const response = await supertest(app).get(`/buscacep/${mock_cep}`);
+
+    expect(response.statusCode).toEqual(500);
+  });
 });
