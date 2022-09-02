@@ -5,6 +5,7 @@
 - Http-Status-Code
 - Jest
 - Docker
+- Swagger
 
 ## Utilizando:
 - Realize o clone deste repositório
@@ -16,6 +17,9 @@
 ```docker build . -t node-mepoupe-test --no-cache```  
 - Em seguida:  
 ```docker run -p 3333:3333 -d node-mepoupe-test```  
+
+### Consultar documentação em  
+```http://localhost:3333/docs/```
 
 # Crie um projeto Node.JS e implemente os seguintes 2 endPoints:
 ## 1- Cálculo da média
@@ -40,3 +44,4 @@ Implemente testes automatizados.
 - Log X
 - Docker X
 - Testes X
+- Documentação X
