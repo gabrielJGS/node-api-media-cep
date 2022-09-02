@@ -5,6 +5,7 @@ COPY .env ./
 COPY jest.config.js ./
 COPY package*.json ./
 COPY tsconfig.json ./
+COPY swagger.json ./
 COPY src ./src
 RUN ls -a
 RUN npm install
@@ -17,8 +18,9 @@ COPY .env ./
 COPY jest.config.js ./
 COPY package*.json ./
 COPY tsconfig.json ./
+COPY swagger.json ./
 RUN npm install --only=production
 COPY --from=0 /usr/dist .
 RUN npm install pm2 -g
 EXPOSE 3333
-CMD ["pm2-runtime","index.js"]
+CMD ["pm2-runtime","src/index.js"]
