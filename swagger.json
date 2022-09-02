@@ -1,0 +1,69 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API Teste Me Poupe",
+    "description": "API Rest em Node para o teste da Me Poupe",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "paths": {
+    "/calculomedia": {
+      "post": {
+        "description": "Rota que calcula a média de 2 números",
+        "sumary": "Cálculo média",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "n1": {
+                    "type": "number"
+                  },
+                  "n2": {
+                    "type": "number"
+                  }
+                }
+              },
+              "example": {
+                "n1": 5,
+                "n2": 4
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Cálculo efetuado com sucesso"
+          },
+          "500": {
+            "description": "Calculo falhou por parâmetros incorretos"
+          }
+        }
+      }
+    },
+    "/buscacep/{cep}": {
+      "get": {
+        "description": "Rota que busca um cep, em uma api externa",
+        "sumary": "Busca cep",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "cep",
+            "type": "string",
+            "required": true,
+            "example": "27510010"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Cep encontrado"
+          },
+          "500": {
+            "description": "Cep não encontrado ou inválido/não informado"
+          }
+        }
+      }
+    }
+  }
+}
