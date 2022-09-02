@@ -1,4 +1,4 @@
-import CalculoMedia from "../models/CalculoMedia";
+import CalculoMedia from "../src/models/CalculoMedia";
 
 describe("Testa a classe CalculoMedia", () => {
   test("testa o retorno do calculo da media de 2 numeros", () => {

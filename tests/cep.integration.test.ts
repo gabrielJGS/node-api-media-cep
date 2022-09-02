@@ -1,4 +1,4 @@
-import app from "../app";
+import app from "../src/app";
 import supertest from "supertest";
 
 describe("Testa a rota Cep", () => {
@@ -34,4 +34,5 @@ describe("Testa a rota Cep", () => {
 
     expect(response.statusCode).toEqual(500);
   });
+
 });

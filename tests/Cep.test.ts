@@ -1,4 +1,4 @@
-import Cep from "../models/Cep";
+import Cep from "../src/models/Cep";
 
 describe("Testa a classe Cep", () => {
   test("testa a instanciacao com um cep válido", () => {
