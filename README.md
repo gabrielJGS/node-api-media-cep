@@ -1,4 +1,4 @@
-# API criada para o teste prático da Me Poupe
+# API criada para um teste prático
 - Typescript
 - Node
 - Express
